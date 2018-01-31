@@ -1,7 +1,9 @@
-# Reproducibility of "Faster Reinforcement Learning with Expert State Sequences"
+# Reproducing Reproducibility of "Faster Reinforcement Learning with Expert State Sequences"
 OpenReview.net: [Faster Reinforcement Learning with Expert State Sequences](https://openreview.net/forum?id=BJ7d0fW0b)
 
-Our algorithm is implemented in Python3 using Pytorch.
+Our team's repository for examining and using the code found here: https://gitlab.eecs.umich.edu/fcyeh/rl_final_project. Much of this code is taken directly from this repository. 
+
+The algorithm is implemented in Python3 using Pytorch.
 
 ## Code Organization
 ```
@@ -47,7 +49,7 @@ Run with python3 -o flag to disable assertions
 
 2. Run the following installation procedure:
 ```
-cd iclr_2018_reproducibility_challenge_rmacy_fcyeh
+cd imitation_learning 
 ./setup.sh
 ```
 
@@ -58,7 +60,7 @@ python3 baseline.py --config config/doom_basic.cfg --seed 59 --save-data-file da
 
 4. Run the testing procedure for the baseline expert to generate expert state sequnces:
 ```
-python3 baseline.py --mode test --config/doom_basic.cfg --seed 59 --save-data-file --load-model <models/save_doom_basic.pt> --save-exp experiences/doom_basic
+python3 baseline.py --mode test --config config/doom_basic.cfg --seed 59 --save-data-file data/doom_basic --load-model <models/save_doom_basic.pt> --save-exp experiences/doom_basic
 ```
 
 5. Run the training procesure for the proposed algorithm using the expert state sequences gathered from the baseline.
