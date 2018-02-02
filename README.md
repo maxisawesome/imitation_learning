@@ -1,4 +1,7 @@
 # Reproducing Reproducibility of "Faster Reinforcement Learning with Expert State Sequences"
+
+Forked from [a Michigan gitlab](https://gitlab.eecs.umich.edu/fcyeh/rl_final_project) in order to use for a Caltech project on third person imitation learning.
+
 OpenReview.net: [Faster Reinforcement Learning with Expert State Sequences](https://openreview.net/forum?id=BJ7d0fW0b)
 
 Our team's repository for examining and using the code found here: https://gitlab.eecs.umich.edu/fcyeh/rl_final_project. Much of this code is taken directly from this repository. 
